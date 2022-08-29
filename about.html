@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js"></script>
+  <script src="assets/particles.js"></script>
 </head>
+
 <body>
-    <script>
-        function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-    }
-    </script>
-    <ul class="topnav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About Me</a></li>
-        <li><a href="skills.html">My Skills</a></li>
-        <li><a href="works.html">My Works</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-      </ul>
-    <div class="container">
-        <div class="center">
-            <img src="images/dp.png" id="imgdp">
-            <h1>Madhav Biju</h1>
-            <p>I am a 3rd year undergraduate from <a href="https://saintgits.org/">Saintgits College of Engineering</a>, Kottayam, Kerala.A budding FrontEnd Developer and a Design Enthusiast, whose currently into Android Custom Rom Development.</p>
-        </div>
+
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li class="active"><a href="about.html">About Me</a></li>
+    <li><a href="skills.html">My Skills</a></li>
+    <li><a href="works.html">My Works</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+  </ul>
+
+  <div class="flex-container">
+    <div class="row">
+      <div class="flex-item">
+        <img src="assets/dp.png" id="imgdp">
+      </div>
+      <div class="flex-item">
+        <h1>Madhav Biju</h1>
+      </div>
+      <div class="flex-item">
+        <p>I am a final year undergraduate from <a href="https://saintgits.org/">Saintgits College of Engineering</a>, Kottayam, Kerala. A budding Front-end Developer and a Design Enthusiast, whose currently into Android Custom Rom Development.</p>
+      </div>
     </div>
+  </div>
+  <div id="particles-js"></div>
+  <script src="assets/app.js"></script>
 </body>
+
 </html>

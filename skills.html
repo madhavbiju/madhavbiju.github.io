@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js"></script>
+  <script src="assets/particles.js"></script>
 </head>
+
 <body>
-    <script>
-        function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-    }
-    </script>
-    <ul class="topnav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li class="active"><a href="skills.html">My Skills</a></li>
-        <li><a href="works.html">My Works</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-      </ul>
-    <div class="container">
-        <div class="center">
-            <h1>C++</h1>
-            <div class="container2">
-              <div class="skills cpp">90%</div>
-            </div>
-            <br>
-            <h1>C</h1>
-            <div class="container2">
-              <div class="skills c">90%</div>
-            </div>
-            <br>
-            <h1>HTML</h1>
-            <div class="container2">
-              <div class="skills html">80%</div>
-            </div>
-            <br>
-            <h1>CSS</h1>
-            <div class="container2">
-              <div class="skills css">40%</div>
-            </div>
-            <br>
-            <h1>Python</h1>
-            <div class="container2">
-              <div class="skills python">35%</div>
-            </div>
-            <br>
-            <h1>JavaScript</h1>
-            <div class="container2">
-              <div class="skills js">45%</div>
-            </div>
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li class="active"><a href="skills.html">My Skills</a></li>
+    <li><a href="works.html">My Works</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+  </ul>
+
+  <div class="flex-container">
+    <div class="row">
+      <div class="flex-item">
+        <h1>C++</h1>
+        <div class="container2">
+          <div class="skills cpp">90%</div>
         </div>
+      </div>
+      <div class="flex-item">
+        <h1>C</h1>
+        <div class="container2">
+          <div class="skills c">90%</div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h1>HTML</h1>
+        <div class="container2">
+          <div class="skills html">80%</div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h1>CSS</h1>
+        <div class="container2">
+          <div class="skills css">50%</div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h1>Python</h1>
+        <div class="container2">
+          <div class="skills python">40%</div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h1>Javascript</h1>
+        <div class="container2">
+          <div class="skills js">30%</div>
+        </div>
+      </div>
+
     </div>
+  </div>
+  <div id="particles-js"></div>
+  <script src="assets/app.js"></script>
 </body>
+
 </html>
