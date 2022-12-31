@@ -1,37 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madhav Biju</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/script.js"></script>
-  <script src="assets/particles.js"></script>
-</head>
-
-<body>
-  <ul class="topnav">
-    <li class="active"><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="skills.html">My Skills</a></li>
-    <li><a href="works.html">My Works</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
-    <li class="icon">
-      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-    </li>
-  </ul>
-  <div class="flex-container">
-    <div class="row">
-      <div class="flex-item">
-        <h1>Hi, I am Madhav.</h1>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Madhav Biju</title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/mobile-styles.css">
+      <script src="js/script.js"></script>
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/swiper-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="mobile_menu_button" id="mobile-menu-toggle">
+         <span class="top"></span>
+         <span class="middle"></span>
+         <span class="bottom"></span>        
       </div>
-    </div>
-  </div>
-  </div>
-  <div id="particles-js"></div>
-  <script src="assets/app.js"></script>
-</body>
-
+      <div class="menu-overlay-wrapper" id="overlay">
+         <nav class="overlay-menu">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#works">Works</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="section" id="home">
+         <div class="main-container" style="border: none;">
+            <div class="landing">
+               <h1 class="hl">Hi, I am Madhav.</h1>
+            </div>
+            <div class="nav">
+               <ul>
+               <li><a class="na" href="#about">About</a></li>
+               <li><a class="na" href="#skills">Skills</a></li>
+               <li><a class="na" href="#works">Works</a></li>
+               <li><a class="na" href="#contact">Contact</a></li>
+            </div>
+            <!--Waves Container-->
+            <div class="wavecont">
+               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                  <defs>
+                     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                  </defs>
+                  <g class="parallax">
+                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                     <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                     <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                     <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                  </g>
+               </svg>
+            </div>
+            <!--Waves end-->
+         </div>
+      </div>
+      <div class="section" id="about">
+         <div class="main-container">
+            <div class="sbs">
+               <div class="card card0">
+                  <div class="border">
+                     <h2 class="h2-card">Madhav Biju</h2>
+                  </div>
+               </div>
+               <div class="txtcont">
+                  <h1>About Me</h1>
+                  <h2>I am a final year undergraduate from Saintgits College of Engineering, Kottayam, Kerala. A budding Front-end Developer and a Design Enthusiast, whose currently into Android Custom Rom Development. </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="skills">
+         <div class="main-container">
+            <h1>My Skills</h1>
+            <div class="box">
+               <div class="skillbox">
+                  <p>HTML</p>
+                  <p>90%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 90%; background: #F0AF84;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>CSS</p>
+                  <p>80%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 80%; background: #F9EBC8;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>JavaScript</p>
+                  <p>50%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 50%; background: #A6CF99;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>JAVA</p>
+                  <p>30%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 40%; background: #F6D7A7;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>C++</p>
+                  <p>90%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 90%; background: #7ACDE6;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>C</p>
+                  <p>95%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 95%; background: #F0D1C4;"></div>
+                  </div>
+               </div>
+               <div class="skillbox">
+                  <p>Python</p>
+                  <p>45%</p>
+                  <div class="skill">
+                     <div class="level" style="width: 45%; background: #8DCFD0;"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="works">
+         <div class="main-container">
+            <h1>My Works</h1>
+            <div class="slide-container swiper">
+               <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <div class="card-image">
+                              <img src="assets/works/mrs.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Movie Recommendation System</h2>
+                           <p class="description">System predicts the preference or liking of a certain user based on a movie they have liked</p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/Movie-Recommendation-System';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/tdms.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Mainour Identification App</h2>
+                           <p class="description">App that helps legal authorities and
+                              professionals to identify mainours from different
+                              cases
+                           </p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/Thondimuthal';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/kys.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Know Your Sadhya</h2>
+                           <p class="description">A simple web game to learn how to serve a
+                              sadhya (South Indian traditional cuisine)
+                           </p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/Know-Your-Sadhya';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/rrs.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Railway Reservation System</h2>
+                           <p class="description">Provides an interface to view Train Schedules, Book and Cancel Ticket
+                            </p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/railway-management-system';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/rc.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">ReChat - Personal Chat App</h2>
+                           <p class="description">A real time chat app developed using ReactJs and
+                              Firebase
+                           </p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/React-Chat-App';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/sn.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">subNow()</h2>
+                           <p class="description">A Simple Webpage that provides the details of the ongoing Class</p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/subNow';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/ffe.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Feedback Filler Extension</h2>
+                           <p class="description">A Chrome Extension to Automatically fill Linway's Feedback Forms</p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/Feedback-Filler-Chrome-Extension';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/cta.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Classes to Attend</h2>
+                           <p class="description">A simple flutter app which calucates the number of classes you need to attend to get 75% attendance</p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/classesToAttend';">View Code</button>
+                        </div>
+                     </div>
+                     <div class="cardw swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/works/cos.jpg" alt="" class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">Cherish OS for Violet</h2>
+                           <p class="description">AOSP Based Custom rom for Redmi Note 7 Pro (violet)</p>
+                           <button class="button" onclick="window.location.href = 'https://github.com/madhavbiju/S_device_xiaomi_violet-OSS';">View Code</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next swiper-navBtn"></div>
+               <div class="swiper-button-prev swiper-navBtn"></div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="contact">
+         <div class="main-container" style="border: none;">
+            <div class="cwm">
+               <h1>Connect with Me</h1>
+               <div class="window">
+                  <div class="header">
+                     <div class="dot"></div>
+                     <div class="dot"></div>
+                     <div class="dot"></div>
+                  </div>
+                  <div class="cmi">
+                     <a class="ia" href="https://www.facebook.com/madhavbiju01/"><span>Facebook</span></a>
+                     <a class="ia" href="https://twitter.com/MadhavBiju"><span>Twitter</span></a>
+                     <a class="ia" href="https://www.linkedin.com/in/madhav-biju-175154211/"><span>LinkedIn</span></a>
+                     <a class="ia" href="https://github.com/madhavbiju"><span>Github</span></a>
+                     <a class="ia" href="mailto:madhavbiju01@gmail.com"><span>Email</span></a>
+                     <a class="ia" href="https://www.instagram.com/madhavbiju/"><span>Instagram</span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <p>Crafted with ❤️ by Madhav</p>
+      </footer>
+   </body>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/swiper-script.js"></script>
 </html>
